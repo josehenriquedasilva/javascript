@@ -17,10 +17,15 @@
     <h1>Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
-    <div>Clique em mim</div>
+    <div class="msg">Clique em mim</div>
     <script>
-        var nome = window.prompt('digite seu nome')
-        window.document.write(`Olá, ${nome}`)
+        /*var d = document.getElementById('msg')
+        d.style.background = 'green'
+        d.innerText = 'Estou aguardando...'*/
+        var d = document.querySelector('div.msg')
+        document.write(`Aqui está o resultado: ${d.innerHTML}`)
+        d.style.color = 'blue'
+        d.style.background = 'white'
     </script>
 </body>
 </html>
