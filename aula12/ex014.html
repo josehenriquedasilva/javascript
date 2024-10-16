@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verificação de idade</title>
+</head>
+<body>
+    <h1>Qual sua idade?</h1>
+    <input type="number" name="idade" id="idade">
+    <input type="button" value="Verificar" onclick="verificar">
+    <div id="res">
+
+    </div>
+    <script>
+        function verificar() {
+        var idad = document.getElementById('input#idade')
+        var res = document.getElementById('div#res')
+        var anos = Number(idade.value)
+        res.innerHTML = `<p>Você tem ${anos}</p>`  
+        }
+    </script>
+</body>
+</html>
