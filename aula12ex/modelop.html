@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hora do dia</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Hora do dia</h1>
+    </header>
+    <main>
+        <div id="hora">
+
+        </div>
+        <div id="imagem">
+            
+        </div>
+    </main>
+    <footer>
+        <p>&copy; CursoemVideo</p>
+    </footer>
+    <script>
+        var agora = new Date()
+        var hora = agora.getHours()
+        var h = document.querySelector('div#hora')
+        h.innerHTML = `Agora são <strong>${hora} horas!</strong>`
+        if (hora < 12) {
+            document.body.style.background = '#D1C090'
+        } else if (hora < 18) {
+            document.body.style.background = '#AA7A63'
+        } else {
+            document.body.style.background = '#484A49'
+        }
+    </script>
+</body>
+</html>
