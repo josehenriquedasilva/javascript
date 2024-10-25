@@ -1,13 +1,14 @@
 function verificar() {
-    var img = document.querySelector('img#imagem')
     var nasc = document.querySelector('input#nas')
     var idade = Number(nasc.value)
     var info = document.querySelector('section#info')
-    var res = 2024 - idade
+    var data = new Date()
+    var ano = data.getFullYear()
+    var res = ano - idade
     var img = document.createElement('img')
     img.setAttribute('id', 'foto')
     if (nasc.value == 0 || (nasc.value > 2024)) {
-        alert('ERRO')
+        alert('[ERRO] Verifique os dados e tente novamente!')
     }  else {
         var sex = document.getElementsByName('sexo')
         var gênero = ''
