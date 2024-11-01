@@ -7,10 +7,3 @@ function tabuada() {
         res.innerHTML = (`${num}`)
     }
 }
-
-var n = 1
-
-for (n = 1 ; n >= 0 ; n * n) {
-    console.log(n)
-    n*n
-}
