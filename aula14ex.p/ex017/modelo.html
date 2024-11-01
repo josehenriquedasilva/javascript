@@ -8,14 +8,17 @@
 </head>
 <body>
     <header>
-        <h1>Título</h1>
+        <h1>Tabuada</h1>
     </header>
     <section>
         <div>
-            testando...
+            <label for="num">Número:</label>
+            <input type="number" name="num" id="num" placeholder="Digite um número!">
+            <input onclick="tabuada()" type="button" value="Gerar Tabuada">
         </div>
         <div>
-
+            <p id="info"><strong>Escolha um número acima!</strong></p>
+            <p id="res"></p>
         </div>
     </section>
     <footer>
