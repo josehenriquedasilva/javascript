@@ -14,7 +14,6 @@ function tabuada() {
             res.style.border = '1px solid'
             res.style.padding = '10px'
             res.style.width = '120px'
-            
         } 
     } 
 }
